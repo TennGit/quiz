@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+    background-color: #2d2d2d;
+    color: white;
+    background-image: url('images/dirt.png');
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #565656;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #ffff55;
+    text-shadow: 2px 2px #3f3f3f;
+}
+
+button {
+    font-family: 'Minecraft', sans-serif;
+    background-color: #5c5c5c;
+    border: 3px solid #373737;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #6f6f6f;
+    border-color: #474747;
+}
+
+input {
+    font-family: 'Minecraft', sans-serif;
+    background-color: #373737;
+    border: 2px solid #565656;
+    color: white;
+    padding: 8px;
+}
+
+#question {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffff55;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#answer-buttons button {
+    background-color: #3f682d;
+    border-color: #2d4f1e;
+}
+
+#answer-buttons button:hover {
+    background-color: #4f7f39;
+    border-color: #3d6326;
+}
+
+#lives {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#lives .fa-heart {
+    color: #ff0000; /* Helderrood */
+    font-size: 28px; /* Iets groter */
+    margin: 0 3px;
+    filter: drop-shadow(0 0 2px #ffffff); /* Witte gloed */
+    animation: heartbeat 1.5s ease infinite; /* Subtiele animatie */
+}
+
+/* Animatie voor de hartjes */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.timer-container {
+    width: 100%;
+    height: 20px;
+    background-color: #000000;
+    border: 2px solid #565656;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #00ff00;
+    transition: width 50ms linear;
+}
+
+#result {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+#scoreboard {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border: 2px solid #565656;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+#scoreboard h3 {
+    color: #ffff55;
+    border-bottom: 2px solid #565656;
+}
+
+.game-over {
+    text-align: center;
+}
+
+.game-over h1 {
+    color: #ff5555;
+    font-size: 48px;
+    animation: pulse 1s infinite;
+}
+
+.minecraft-crying {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    display: block;
+    image-rendering: pixelated;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.minecraft-link {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.minecraft-link p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.minecraft-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5c8e24;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #435c1b;
+    text-shadow: 2px 2px #435c1b;
+    transition: all 0.2s;
+}
+
+.minecraft-button:hover {
+    background-color: #6fa828;
+    transform: scale(1.05);
+}
+
+.minecraft-game-container {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #7fb238; /* Minecraft gras kleur */
+    position: relative;
+    border: 10px solid #593d29; /* Minecraft dirt kleur */
+}
+
+#player {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #5b6ee1; /* Blauwe kleur voor Steve */
+    transition: all 0.1s;
+}
+
+#goal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #23f6f6; /* Lichtblauwe kleur voor diamond */
+    transition: all 0.1s;
+}
+
+#game-stats {
+    font-size: 24px;
+    margin: 20px;
+    color: #333;
+} 

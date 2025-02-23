@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-section">
+            <h2>⛏️ Minecraft Quiz Login ⛏️</h2>
+            <input type="text" id="username" placeholder="Gebruikersnaam">
+            <input type="password" id="password" placeholder="Wachtwoord">
+            <button onclick="login()">Start Quiz</button>
+        </div>
+
+        <div id="game-section" style="display: none;">
+            <h2>⚔️ Minecraft Quiz ⚔️</h2>
+            <div id="lives"></div>
+            <div class="timer-container">
+                <div id="timer-bar"></div>
+            </div>
+            <div id="question"></div>
+            <div id="answer-buttons"></div>
+            <div id="result"></div>
+            <div id="scoreboard"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
