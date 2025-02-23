@@ -270,7 +270,7 @@ function checkAnswer(userAnswer) {
             gameSection.innerHTML = `
                 <div class="game-over">
                     <h1>GAME OVER!</h1>
-                    <img src="images/body.png" alt="Crying Minecraft character" class="minecraft-crying">
+                    <img src="body.png" alt="Crying Minecraft character" class="minecraft-crying">
                     <p>Je score: ${scores[username]}</p>
                     <p>Je hebt nog ${50 - scores[username]} punten nodig voor Poki!</p>
                     <button onclick="restartGame('${username}')">Klik om opnieuw te spelen</button>
